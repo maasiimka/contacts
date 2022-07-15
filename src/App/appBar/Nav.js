@@ -1,9 +1,9 @@
 import React from "react";
-import routes from "../routes";
-import { NavLink } from "react-router-dom";
-import styles from "./app.module.css";
 import { useSelector } from "react-redux";
-import { getIsAutentificated } from "../redux/auth/auth-selectors";
+import { NavLink } from "react-router-dom";
+import { getIsAutentificated } from "../../redux/auth/auth-selectors";
+import routes from "../../routes";
+import styles from "./app.module.css";
 
 const Nav = () => {
   const isAuthenticated = useSelector(getIsAutentificated);

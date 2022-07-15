@@ -1,34 +1,36 @@
 import React, { lazy, Suspense, useCallback, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import routes from "../routes";
-import styles from "./app.module.css";
-import AuthNav from "./AuthNav";
-import Nav from "./Nav";
-import UserMenu from "./UserMenu";
-import PrivateRoute from "./PrivateRoute";
-import PublicRoute from "./PublicRoute";
 import { getIsAutentificated } from "../redux/auth/auth-selectors";
 import { getCurrent } from "../redux/auth/auth-operations";
+import PrivateRoute from "./wrap/PrivateRoute";
+import PublicRoute from "./wrap/PublicRoute";
+import routes from "../routes";
+import styles from "./appBar/app.module.css";
+import AuthNav from "./appBar/AuthNav";
+import Nav from "./appBar/Nav";
+import UserMenu from "./appBar/UserMenu";
 
 const HomePage = lazy(() =>
-  import("../views/HomePage" /* webpackChunkName: "home-page" */)
+  import("../views/home/HomePage" /* webpackChunkName: "home-page" */)
 );
 
 const PhoneBook = lazy(() =>
-  import("../views/PhoneBook" /* webpackChunkName: "phonebook" */)
+  import("../views/phonebook/PhoneBook" /* webpackChunkName: "phonebook" */)
 );
 
 const Registration = lazy(() =>
-  import("../views/Registration" /* webpackChunkName: "registration" */)
+  import(
+    "../views/authentication/Registration" /* webpackChunkName: "registration" */
+  )
 );
 
 const Login = lazy(() =>
-  import("../views/Login" /* webpackChunkName: "login" */)
+  import("../views/authentication/Login" /* webpackChunkName: "login" */)
 );
 
 const Error = lazy(() =>
-  import("../views/Error" /* webpackChunkName: "login" */)
+  import("../views/error/Error" /* webpackChunkName: "login" */)
 );
 
 const App = () => {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./styles.module.css";
-import { addContact } from "../redux/phonebook-operations";
-import selectors from "../redux/phonebook-selectors";
+import { addContact } from "../../redux/phonebook/phonebook-operations";
+import selectors from "../../redux/phonebook/phonebook-selectors";
 
 const Form = ({ onSave }) => {
   const dispatch = useDispatch();

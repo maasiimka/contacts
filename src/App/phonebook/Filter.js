@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { filterContacts } from "../redux/phonebook-actions";
-import selectors from "../redux/phonebook-selectors";
+import { filterContacts } from "../../redux/phonebook/phonebook-actions";
+import selectors from "../../redux/phonebook/phonebook-selectors";
 import styles from "./styles.module.css";
 
 const Filter = () => {

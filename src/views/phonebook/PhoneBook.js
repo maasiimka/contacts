@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import styles from "../App/styles.module.css";
-import Form from "../App/Form";
-import Filter from "../App/Filter";
-import Contacts from "../App/Contacts";
-import Modal from "../App/Modal";
-import IconButton from "../App/IconButton";
-import { ReactComponent as AddIcon } from "../App/addIcon.svg";
-import { fetchContacts } from "../redux/phonebook-operations";
-import selectors from "../redux/phonebook-selectors";
+import { fetchContacts } from "../../redux/phonebook/phonebook-operations";
+import selectors from "../../redux/phonebook/phonebook-selectors";
+import styles from "./styles.module.css";
+import Form from "../../App/phonebook/Form";
+import Filter from "../../App/phonebook/Filter";
+import Contacts from "../../App/phonebook/Contacts";
+import Modal from "../../App/wrap/Modal";
+import IconButton from "../../App/wrap/IconButton";
+import { ReactComponent as AddIcon } from "../../icons/addIcon.svg";
 
 const Phonebook = () => {
   const dispatch = useDispatch();

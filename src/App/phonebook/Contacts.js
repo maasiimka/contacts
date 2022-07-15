@@ -1,12 +1,12 @@
 import React, { useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import * as operations from "../../redux/phonebook/phonebook-operations";
+import selectors from "../../redux/phonebook/phonebook-selectors";
 import styles from "./styles.module.css";
-import IconButton from "./IconButton";
+import IconButton from "../wrap/IconButton";
 import ChangeContact from "./ChangeContact";
-import { ReactComponent as DeleteIcon } from "./deleteIcon.svg";
-import { ReactComponent as ChangeIcon } from "./changeIcon.svg";
-import * as operations from "../redux/phonebook-operations";
-import selectors from "../redux/phonebook-selectors";
+import { ReactComponent as DeleteIcon } from "../../icons/deleteIcon.svg";
+import { ReactComponent as ChangeIcon } from "../../icons/changeIcon.svg";
 
 const Contacts = () => {
   const dispatch = useDispatch();

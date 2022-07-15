@@ -1,9 +1,9 @@
 import React, { useCallback } from "react";
-import styles from "./app.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { getUserName } from "../redux/auth/auth-selectors";
-import defaultAvatar from "./default-avatar.jpg";
-import { logout } from "../redux/auth/auth-operations";
+import { getUserName } from "../../redux/auth/auth-selectors";
+import { logout } from "../../redux/auth/auth-operations";
+import styles from "./app.module.css";
+import defaultAvatar from "../../icons/default-avatar.jpg";
 
 const UserMenu = () => {
   const dispatch = useDispatch();

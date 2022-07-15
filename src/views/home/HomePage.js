@@ -1,8 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { getIsAutentificated, getUserName } from "../redux/auth/auth-selectors";
-import routes from "../routes";
+import {
+  getIsAutentificated,
+  getUserName,
+} from "../../redux/auth/auth-selectors";
+import routes from "../../routes";
 import styles from "./homepage.module.css";
 
 const HomePage = () => {

@@ -16,7 +16,7 @@ import {
   filterContacts,
 } from "./phonebook-actions";
 
-import { logoutSuccess } from "./auth/auth-actions";
+import { logoutSuccess } from "../auth/auth-actions";
 
 const contacts = createReducer([], {
   [fetchContactSuccess]: (_, { payload }) => payload,

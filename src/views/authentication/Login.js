@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { signup } from "../redux/auth/auth-operations";
+import { login } from "../../redux/auth/auth-operations";
+
 import styles from "./form.module.css";
 
-const Registration = () => {
+const Login = () => {
   const dispatch = useDispatch();
-
-  const [name, setName] = useState("");
-
-  const handleName = (event) => {
-    setName(event.target.value);
-  };
 
   const [email, setEmail] = useState("");
 
@@ -27,26 +22,15 @@ const Registration = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    dispatch(signup({ name, email, password }));
+    dispatch(login({ email, password }));
 
-    setName("");
     setEmail("");
     setPassword("");
   };
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.formContainer}>
-        <label className={styles.label}>
-          <span>Your name:</span>
-          <input
-            type="name"
-            name="name"
-            value={name}
-            className={styles.input}
-            onChange={handleName}
-          />
-        </label>
         <label className={styles.label}>
           <span>Your email:</span>
           <input
@@ -69,10 +53,10 @@ const Registration = () => {
         </label>
       </div>
       <button type="submit" className={styles.submitButton}>
-        Sign up
+        Login
       </button>
     </form>
   );
 };
 
-export default Registration;
+export default Login;

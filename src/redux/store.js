@@ -10,7 +10,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import phonebook from "./phonebook-reducer";
+import phonebook from "./phonebook/phonebook-reducer";
 import auth from "./auth/auth-reducer";
 
 const persistConfig = {
