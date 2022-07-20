@@ -1,41 +1,233 @@
-.container {
+@import "../../vars.css";
+
+h1,
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: var(--color);
+  background-color: var(--additional-color);
+  padding: 10px 30px;
+  border-radius: var(--border-radius);
+  transition: background-color 250ms ease;
+}
+
+.link:hover {
+  background-color: var(--additional-color-hover);
+}
+
+.activeLink {
+  color: var(--additional-color);
+}
+
+.heroSection{
   padding-top: 100px;
+  width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroContainer{
+  height: 431px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.heroTitle{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.signupButton{
+  display: block;
+  padding: 10px 35px;
+  margin-left: 30px;
+
+  text-decoration: none;
+  color: var(--color);
+  background-color: var(--additional-color);
+  border-radius: var(--border-radius);
+  transition: background-color 250ms ease;
+}
+
+.signupButton:hover {
+  background-color: var(--additional-color-hover);
+}
+
+.heroImage{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.descriptionSection{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 170px;
+}
+
+.descriptionList{
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 95px;
+
+  list-style: none;
+}
+
+.descriptionItem > h2{
+  font-weight: 400;
+  font-size: 18px;
+line-height: 28px;
+}
+
+.descriptionItem > p{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.featuresSection{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 170px;
+  padding-bottom: 160px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.featuresTitle{
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.featuresList{
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  padding-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  list-style: none;
+}
+
+.featuresItem{
+  display: flex;
   align-items: center;
 }
 
-.container > h2 {
-  font-weight: 500;
-  margin: 5px;
+.featuresText{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.featuresImage{
+  width: 450px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footerSection{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
 }
 
 .authnav {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   list-style: none;
-  width: 200px;
+  width: 270px;
 }
 
-.link {
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.startSection{
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
+
+.startTitle{
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.startSubtitle{
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.startButton{
   display: block;
+  padding: 10px 35px;
+  width: fit-content;
+  margin-top: 25px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
   text-decoration: none;
-  color: black;
-  padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 2px;
+  color: var(--color);
+  background-color: var(--additional-color);
+  border-radius: var(--border-radius);
+  transition: background-color 250ms ease;
 }
 
-.link:hover {
-  color: rgb(75, 75, 75);
-  border-color: rgb(75, 75, 75);
-}
-
-.activeLink {
-  color: rgb(255, 100, 73);
+.startButton:hover {
+  background-color: var(--additional-color-hover);
 }

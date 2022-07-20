@@ -1,6 +1,9 @@
+@import "../../vars.css";
+
 .form {
   width: 350px;
-  margin-top: 50px;
+  height: 100%;
+  padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
 
@@ -27,18 +30,27 @@
 
 .submitButton {
   padding: 10px 30px;
-  background-color: #fff;
-  border: 1px solid black;
+  background-color: var(--additional-color);
   font-size: 15px;
-  transition: background-color 300ms ease;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background-color 250ms ease;
 }
 
 .submitButton:hover {
-  background-color: rgb(212, 212, 212);
+  background-color: var(--additional-color-hover);
 }
 
 .input {
   height: 25px;
   width: 200px;
-  border: 1px solid black;
+  border: none;
+  border-radius: var(--border-radius);
+  transition: background-color 250ms ease;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  background-color: var(--color-hover);
 }
