@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 h1,
+h2,
 p{
   margin: 0;
   padding: 0;
@@ -25,23 +26,17 @@ p{
 }
 
 .heroSection{
-  padding-top: 100px;
-  width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .heroContainer{
   height: 431px;
-  padding-right: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .heroTitle{
@@ -53,7 +48,6 @@ p{
 .signupButton{
   display: block;
   padding: 10px 35px;
-  margin-left: 30px;
 
   text-decoration: none;
   color: var(--color);
@@ -70,24 +64,25 @@ p{
   display: block;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .descriptionSection{
-  width: 1280px;
+  padding-top: 60px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 170px;
 }
 
 .descriptionList{
   margin: 0;
   padding: 0;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 95px;
-
   list-style: none;
+}
+
+.descriptionItem{
+  padding-bottom: 20px;
 }
 
 .descriptionItem > h2{
@@ -103,15 +98,11 @@ line-height: 28px;
 }
 
 .featuresSection{
-  width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 170px;
-  padding-bottom: 160px;
-
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .featuresTitle{
@@ -126,21 +117,22 @@ line-height: 28px;
 
 .featuresList{
   margin: 0;
+  margin: -10px;
   padding: 0;
-  height: 300px;
   padding-left: 20px;
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-around;
 
   list-style: none;
 }
 
 .featuresItem{
+  margin: 0;
   display: flex;
   align-items: center;
+  margin: 10px;
 }
 
 .featuresText{
@@ -149,14 +141,14 @@ line-height: 28px;
 }
 
 .featuresImage{
-  width: 450px;
+  width: 100%;
   display: block;
   margin: 0;
   padding: 0;
 }
 
 .footerSection{
-  width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -182,52 +174,108 @@ line-height: 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 130px;
 }
 
-.startSection{
-  width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 150px;
+@media screen and (max-width: 559px) {
+
+  .signupButton{
+    margin-bottom: 40px;
+  }
+
+  .logo > span {
+    display: none;
+  }
+
+  .featuresList{
+    padding-bottom: 40px;
+  }
 }
 
-.startTitle{
-  margin: 0;
-  padding: 0;
+@media screen and (min-width: 600px) {
+  .heroSection{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  .heroContainer{
+    align-items: flex-start;
+    padding-right: 40px;
+  }
+
+  .heroImage{
+    width: 300px;
+  }
+  .signupButton{
+    margin-left: 30px;
+  }
+
+  .descriptionSection{
+    width: 600px;
+  }
+
+  .descriptionList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 95px;
+  }
+
+  .featuresSection{
+    width: 600px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .featuresList{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .featuresImage{
+    width: 350px;
+  }
+
+  .footerSection{
+    width: 600px;
+  }
+
+  .logo {
+    width: 130px;
+  }
 }
 
-.startSubtitle{
-  margin: 0;
-  padding: 0;
-  padding-top: 40px;
+@media screen and (min-width: 1290px) {
+  .heroSection{
+    padding-top: 100px;
+    width: 1200px;
+  }
 
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 25px;
-}
+  .heroImage{
+    width: 560px;
+  }
 
-.startButton{
-  display: block;
-  padding: 10px 35px;
-  width: fit-content;
-  margin-top: 25px;
+  .descriptionSection{
+    padding-top: 170px;
+    width: 1200px;
+  }
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  .featuresSection{
+    padding-top: 170px;
+    padding-bottom: 160px;
+    width: 1200px;
+  }
 
-  text-decoration: none;
-  color: var(--color);
-  background-color: var(--additional-color);
-  border-radius: var(--border-radius);
-  transition: background-color 250ms ease;
-}
+  .featuresImage{
+    width: 450px;
+  }
 
-.startButton:hover {
-  background-color: var(--additional-color-hover);
-}
+  .footerSection{
+    width: 1200px;
+  }
+}  

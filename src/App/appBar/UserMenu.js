@@ -19,7 +19,7 @@ const UserMenu = () => {
         <img src={defaultAvatar} alt="avatar" className={styles.avatar} />
       </li>
       <li>
-        <p>{name}</p>
+        <p className={styles.userName}>{name}</p>
       </li>
       <li>
         <button

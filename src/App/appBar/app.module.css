@@ -1,14 +1,5 @@
 @import "../../vars.css";
 
-p{
-  margin: 0;
-  padding: 0;
-  margin-left: 10px;
-  display: block;
-  padding-top: 23px;
-  padding-bottom: 23px;
-}
-
 .nav,
 .authnav,
 .userMenu {
@@ -21,16 +12,14 @@ p{
   list-style: none;
 }
 
-.nav > li,
-.authnav > li,
-.userMenu > li {
+li {
   margin: 0;
 }
 
 .logoutButton{
   font-size: 16px;
   font-weight: 400;
-  width: 120px;
+  width: fit-content;
   height: 65px;
   display: inline-block;
   color: var(--color);
@@ -48,7 +37,7 @@ p{
   padding: 0;
   width: 43px;
   height: 43px;
-  padding: 11px;
+  padding: 11px 3px;
 }
 
 .avatar{
@@ -62,11 +51,15 @@ p{
   border-radius: 50%;
 }
 
+.userName{
+  color: var(--additional-color);
+}
+
 .link {
   display: block;
   text-decoration: none;
   color: var(--color);
-  padding: 21px 20px;
+  padding: 21px 10px;
   transition: color 250ms ease;
 }
 
@@ -82,6 +75,29 @@ p{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 130px;
-  padding-right: 60px;
+}
+
+@media screen and (max-width: 559px) {
+  .logo > span {
+    display: none;
+  }
+
+}
+
+@media  screen and (min-width: 600px) {
+  .logo {
+    width: 130px;
+  }
+
+  .logoutButton{
+    width: 120px;
+  }
+
+  .link{
+    padding: 21px 20px;
+  }
+
+  .userItem{
+    padding: 11px;
+  }
 }

@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .form {
-  width: 350px;
+  width: 270px;
   height: 100%;
   padding-top: 100px;
   margin-left: auto;
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 350px;
+  width: 260px;
   font-size: 17px;
   margin-bottom: 10px;
 }
@@ -43,7 +43,7 @@
 
 .input {
   height: 25px;
-  width: 200px;
+  width: 120px;
   border: none;
   border-radius: var(--border-radius);
   transition: background-color 250ms ease;
@@ -53,4 +53,18 @@
 .input:focus {
   outline: none;
   background-color: var(--color-hover);
+}
+
+@media screen and (min-width: 600px) {
+  .form {
+    width: 350px;
+  }
+
+  .input{
+    width: 200px;
+  }
+
+  .label{
+    width: 350px;
+  }
 }

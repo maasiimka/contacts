@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getUserName } from "../../redux/auth/auth-selectors";
-import styles from "./homepage.module.css";
+import styles from "./start.module.css";
 
 const StartPage = () => {
   const userName = useSelector(getUserName);

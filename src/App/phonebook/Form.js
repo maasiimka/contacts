@@ -64,7 +64,7 @@ const Form = ({ onSave }) => {
         </label>
       </div>
       <button type="submit" className={styles.button}>
-        add contact
+        add
       </button>
     </form>
   );
