@@ -1,7 +1,7 @@
 {
   "main.css": "/contacts/static/css/main.af2b6611.chunk.css",
-  "main.js": "/contacts/static/js/main.3664516b.chunk.js",
-  "main.js.map": "/contacts/static/js/main.3664516b.chunk.js.map",
+  "main.js": "/contacts/static/js/main.b4099118.chunk.js",
+  "main.js.map": "/contacts/static/js/main.b4099118.chunk.js.map",
   "home-page.css": "/contacts/static/css/home-page.2e3d35d4.chunk.css",
   "home-page.js": "/contacts/static/js/home-page.6ab442e9.chunk.js",
   "home-page.js.map": "/contacts/static/js/home-page.6ab442e9.chunk.js.map",
@@ -26,12 +26,12 @@
   "static/media/preview.png": "/contacts/static/media/preview.4dc4cf98.png",
   "static/media/example.jpg": "/contacts/static/media/example.1a6fe922.jpg",
   "static/media/search.fae15579.svg": "/contacts/static/media/search.fae15579.svg",
-  "static/css/main.af2b6611.chunk.css.map": "/contacts/static/css/main.af2b6611.chunk.css.map",
   "static/css/home-page.2e3d35d4.chunk.css.map": "/contacts/static/css/home-page.2e3d35d4.chunk.css.map",
+  "static/css/main.af2b6611.chunk.css.map": "/contacts/static/css/main.af2b6611.chunk.css.map",
   "static/css/phonebook.a693a8c7.chunk.css.map": "/contacts/static/css/phonebook.a693a8c7.chunk.css.map",
-  "static/css/registration.b43f637b.chunk.css.map": "/contacts/static/css/registration.b43f637b.chunk.css.map",
   "static/css/login.b43f637b.chunk.css.map": "/contacts/static/css/login.b43f637b.chunk.css.map",
+  "static/css/registration.b43f637b.chunk.css.map": "/contacts/static/css/registration.b43f637b.chunk.css.map",
   "index.html": "/contacts/index.html",
-  "precache-manifest.1eb8c7b6df708a62bfb5a620a66359bf.js": "/contacts/precache-manifest.1eb8c7b6df708a62bfb5a620a66359bf.js",
+  "precache-manifest.c935c1e200fbcd472b80782f3d210c42.js": "/contacts/precache-manifest.c935c1e200fbcd472b80782f3d210c42.js",
   "service-worker.js": "/contacts/service-worker.js"
 }
