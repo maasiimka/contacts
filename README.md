@@ -2,8 +2,11 @@
 
 Technologies:
 - Create react app
+- HTML,CSS
+- JavaScript
+- React
 - Redux
-- React router
+- Router
 - React hooks
 - Registration/Authorization
 - Mobile, tablet and desktop version
