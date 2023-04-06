@@ -10,3 +10,6 @@ Technologies:
 - React hooks
 - Registration/Authorization
 - Mobile, tablet and desktop version
+- Axios
+
+[Demo page](https://rms-react-phonebook.netlify.app/)
